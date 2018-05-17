@@ -34,5 +34,5 @@ To the port that the container is listening on:
 ## Test
 
 ```
-# curl http://localhost:8080
+# curl http://localhost/info.php
 ```
