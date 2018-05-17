@@ -19,6 +19,9 @@ ADD info.php /var/www/html
 
 #CMD sudo systemctl restart httpd.service
 CMD ["/run-httpd.sh"]
+CMD cp /etc/httpd/conf.d/autoindex.conf /etc/httpd/conf.d/autoindex.conf.old
+CMD cp /etc/httpd/conf.d/userdir.conf /etc/httpd/conf.d/userdir.conf.old
+CMD cp /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf.old
 
 WORKDIR /etc/httpd
 
